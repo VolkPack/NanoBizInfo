@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.nick.localbiz.MainActivity"
+        android:background="@color/background">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header"
+            android:id="@+id/top_logo"/>
+        <ImageView
+            android:layout_below="@+id/top_logo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/main_logo"
+            android:src="@drawable/bateh_bros"
+            android:paddingBottom="15dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hours"
+            android:id="@+id/hours_img"
+            android:layout_toStartOf="@+id/biz_hours"
+            android:layout_toLeftOf="@+id/biz_hours"
+            android:layout_alignBottom="@+id/biz_hours"
+            android:layout_below="@+id/street" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_img"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phone"
+            android:layout_below="@+id/main_logo"
+            android:layout_alignRight="@+id/hours_img"
+            android:layout_alignEnd="@+id/hours_img"
+            android:paddingBottom="5dp"
+            android:layout_alignBottom="@+id/phone_title" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loc"
+            android:layout_below="@+id/phone"
+            android:id="@+id/imageView"
+            android:layout_alignBottom="@+id/address_string" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_title"
+            android:text="@string/phone_string"
+            android:textStyle="bold"
+            android:textColor="@color/title"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/main_logo"
+            android:layout_alignLeft="@+id/biz_hours"
+            android:layout_alignStart="@+id/biz_hours" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:text="@string/phone_number"
+            android:textColor="@color/generic"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/phone_img"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_string"
+            android:text="@string/address_string"
+            android:textStyle="bold"
+            android:textColor="@color/title"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/phone"
+            android:layout_toRightOf="@+id/phone_img"
+            android:layout_toEndOf="@+id/phone_img" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/street"
+            android:paddingBottom="5dp"
+            android:textColor="@color/generic"
+            android:text="@string/address"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/biz_hours"
+            android:text="@string/hours_tag"
+            android:textStyle="bold"
+            android:textColor="@color/title"
+            android:layout_below="@+id/street"
+            android:layout_alignRight="@+id/hours_list"
+            android:layout_alignEnd="@+id/hours_list" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hours_list"
+            android:text="@string/hours"
+            android:lines="7"
+            android:textColor="@color/generic"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/hours_img"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/link_to_yelp"
+            android:layout_below="@id/hours_list"
+            android:text="@string/link_to_yelp"
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:onClick="goToYelp"
+            android:textColor="@color/link"/>
+
+    </RelativeLayout>
+</ScrollView>

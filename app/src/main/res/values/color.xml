@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#b3b3b3</color>
+    <color name="title">@android:color/holo_purple</color>
+    <color name="generic">@android:color/black</color>
+    <color name="link">@android:color/holo_orange_dark</color>
+</resources>
