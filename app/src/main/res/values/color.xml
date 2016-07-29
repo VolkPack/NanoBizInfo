@@ -4,4 +4,5 @@
     <color name="title">@android:color/holo_purple</color>
     <color name="generic">@android:color/black</color>
     <color name="link">@android:color/holo_orange_dark</color>
+    <color name="phone_map_link">#5858F8</color>
 </resources>

@@ -53,10 +53,22 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/loc"
+            android:id="@+id/desc_img"
+            android:src="@drawable/description"
+            android:layout_toRightOf="@+id/street"
+            android:layout_below="@+id/main_logo"
+            android:layout_alignBottom="@+id/description"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location"
             android:layout_below="@+id/phone"
             android:id="@+id/imageView"
-            android:layout_alignBottom="@+id/address_string" />
+            android:layout_alignBottom="@+id/address_string"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/address_string"
+            android:layout_toStartOf="@+id/address_string" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,11 +85,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/phone"
             android:text="@string/phone_number"
-            android:textColor="@color/generic"
+            android:textColor="@color/phone_map_link"
             android:paddingBottom="10dp"
             android:layout_below="@+id/phone_img"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:onClick="callUs"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,11 +107,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/street"
             android:paddingBottom="5dp"
-            android:textColor="@color/generic"
+            android:textColor="@color/phone_map_link"
             android:text="@string/address"
             android:layout_below="@+id/imageView"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:onClick="goToMap"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -125,12 +139,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/link_to_yelp"
-            android:layout_below="@id/hours_list"
+            android:layout_below="@+id/desc_string"
+            android:layout_alignLeft="@+id/desc_string"
             android:text="@string/link_to_yelp"
             android:textStyle="bold|italic"
+            android:paddingLeft="10dp"
             android:textSize="25dp"
             android:onClick="goToYelp"
             android:textColor="@color/link"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/desc_img"
+            android:layout_below="@+id/main_logo"
+            android:text="@string/description_title"
+            android:id="@+id/description"
+            android:textStyle="bold"
+            android:textColor="@color/title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/desc_string"
+            android:layout_below="@+id/desc_img"
+            android:layout_toRightOf="@+id/street"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:lines="10"
+            android:textColor="@color/generic"
+            android:text="@string/descriopion"/>
 
     </RelativeLayout>
 </ScrollView>

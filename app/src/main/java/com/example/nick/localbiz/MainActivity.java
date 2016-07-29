@@ -40,8 +40,24 @@ public class MainActivity extends ActionBarActivity {
 
     public void goToYelp(View view)
     {
-        String url = "http://www.yelp.com/biz/bateh-brothers-liquors-and-groceries-cupertino";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.yelp_url)));
+        startActivity(intent);
+    }
+
+    public void callUs(View view)
+    {
+
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse(getString(R.string.phone_to_dial)));
+        startActivity(intent);
+    }
+
+    public void goToMap(View view)
+    {
+        String url = "http://maps.google.co.in/maps?q=" + getString(R.string.address);
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(intent);
     }
+
+
 }

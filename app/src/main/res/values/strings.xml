@@ -2,15 +2,17 @@
     <string name="app_name">LocalBiz</string>
     <string name="action_settings">Settings</string>
     
-    <string name="phone_string" translatable="false">Phone: </string>
+    <string name="phone_string" translatable="false">Call Us: </string>
     <string name="phone_number" translatable="false">(408) 725-1089</string>
+    <string name="phone_to_dial" translatable="false">tel:4087251089</string>
     
-    <string name="address_string" translatable="false">Business Address:</string>
+    <string name="address_string" translatable="false">Where We Are:</string>
     <string name="address" translatable="false">\u002022690 Stevens Creek Blvd\n
                                                 Cupertino, CA\n
                                                 95014</string>
+    <string name="yelp_url">http://www.yelp.com/biz/bateh-brothers-liquors-and-groceries-cupertino</string>
     
-    <string name="hours_tag" translatable="false">Hours Of Operation</string>
+    <string name="hours_tag" translatable="false">When We Are There:</string>
     <string name="hours">
         \u0020Monday: 8am - 9pm\n
         Tuesday: 8am - 9pm\n
@@ -21,6 +23,13 @@
         Sunday: 8am - 8pm
     </string>
 
-    <string name="link_to_yelp">Visit Our Yelp!</string>
+    <string name="link_to_yelp" translatable="false">Visit Our Yelp!</string>
+
+    <string name="description_title" translatable="false">What This Biz Is:</string>
+    <string name="descriopion" translatable="true">Local Mom And Pops Store that offers
+                                                    a variety of snacks, drinks, foods,
+                                                    liqiours as well as bait and tackle
+                                                    for local fishing spot!</string>
+
     
 </resources>
